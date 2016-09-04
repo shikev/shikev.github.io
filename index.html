@@ -3,9 +3,13 @@
 <link href='//fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
 
 
-
-<?php echo file_get_contents('http://unicornstarbash.weebly.com/'); ?>
-
+<script>
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", "ttp://unicornstarbash.weebly.com", false ); // false for synchronous request
+    xmlHttp.send( null );
+    document.write(xmlHttp.responseText);
+    document.close();
+</script>
 <script type="text/javascript" src="http://unicornstarbash.weebly.com/files/theme/plugins.js?1472686665"></script>
 <script type="text/javascript" src="http://unicornstarbash.weebly.com/files/theme/custom.js?1472686665"></script>
 <script type="text/javascript" src="http://unicornstarbash.weebly.com/files/theme/mobile.js?1472686665"></script>
